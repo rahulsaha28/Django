@@ -1,2 +1,38 @@
-# Django
-All about to know Django
+---------------------------
+    OS MODULE
+---------------------------
+
+|      Method    |   Given     |  Return     |
+|----------------|-------------|-------------|
+| os.getcwd()      |    |     return current  working dir   (string)|
+|os.chdir(path)|   path(string)    |   it change the current working dir   |
+|os.listdir()| | return a list of file in cwd |
+| os.mkdir(name) | name(string) | create a dir by the name |
+|os.makedirs(name)| name(string)| create a few intermediate level dir |
+| os.removedirs(name) | name(string) | remove dirs recursively |
+|os.rename(src, dst)| src(string) , dst(string)| rename the src to dst |
+|os.stat(name)| name(string) | return an stat_result object that has many property|
+|os.walk(path)| path(string total path) | return tuple (dirpath(folder path), dirname(folder), filename)|
+|os.environ| | return an dictionary|
+
+
+----------------------------------------
+    os.path module
+----------------------------------------
+
+|   Method    |    Given      |   Return      |
+|-------------|---------------|---------------|
+| os.path.join(path, *paths) | path(str), *paths(many str) | return the str name of the join path|
+|os.path.basename(path)| path(string)| return last file name in the path|
+|os.path.dirname(path)| path(str) | return the dirname where last file exist in the path|
+|os.path.split(path)| path(str)| return (head, tail) where tail is the last pathname component and head is the everything leading up to that|
+|os.path.exists(path)| path(str)| return boolean if path is exist or not|
+|os.path.isdir(path)| path(str)| return true if the path is a dir|
+|os.path.isfile(path)| path(str)| return true if the path is a file|
+|os.path.splitext(path)| path(str) | return a pair (root, ext) such that root + ext = path|
+| `__file__` | | return the current runable file path|
+|os.path.abspath( path )| path(str) | return the normalized absolute pathname of the path|
+
+
+
+
