@@ -114,3 +114,26 @@ decorator_fun = decorator_function(cal);
 
 print(decorator_fun())
 ```
+
+### Using Decorator
+
+```python
+
+
+def decorator_function(original_function):
+    def wrapper_function():
+        print('hi rahul')
+        return original_function()
+
+    return wrapper_function;
+
+
+
+
+@decorator_function
+def cal1():
+    return 3*5
+
+print(cal1())
+
+```
