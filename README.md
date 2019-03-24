@@ -34,8 +34,9 @@
 |os.path.abspath( path )| path(str) | return the normalized absolute pathname of the path|
 
 
-
+-----------------------------------------
 ## First class function
+-----------------------------------------
 
 * function return a function
 
