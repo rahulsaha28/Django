@@ -40,6 +40,12 @@
 
 * function return a function
 
+1. function assign to a variable, 
+
+2. function pass through an argument, 
+
+3. function return by a function.
+
 ```python
 def get_start(tag):
     link = None;
