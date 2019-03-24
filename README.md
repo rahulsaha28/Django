@@ -137,3 +137,32 @@ def cal1():
 print(cal1())
 
 ```
+
+
+----------------- Date time in Python ----------------------------------
+
+>>> module name: datetime
+
+    | method/property name | set     | Return |
+    |---------------|---------|---------|
+    |date(year, month, day)| year, month, day (int) | return obj (datetime.date) like 2019-02-19 |
+    | datetime.date.today() | | return obj (datetime.date) |
+    | .day | | return day (int)|
+    | .year | | return year (int)|
+    | .weekday() |  | return weekday (int)|
+    | datetime.timedelta(days=1) | days = int | return a obj (datetime.timedelta) |
+    | datetime.timedelta(hours=3)| hours = int | return a obj (datetime.timedelta)|
+    | ( datetime.date(year, month, day) + datetime.timedelta(day=3) )|  | return a obj ( datetime.date ) like 2019-02-19|
+    | ( datetime.date(year1, month1, day1)- datetime.date(year2, month2, day2)).total_seconds() |  | return float|
+    | datetime.time( h, m, sec) | h , m, sec| return datetime.time |
+    |  .hour|  | return hour (int)|
+    | .minute |  |  return minute (int)|
+    | .second |  |  return second (int) |
+    | datetime.datetime(year, month, day, h, m, s, mil )| year, month, day, h, m, s, mil| return obj (datetime.datetime)|
+    | datetime.datetime.today() |  | return obj (datetime.datetime)|
+    | datetime.datetime.now()| | return obj (datetime.datetime)|
+    | datetime.datetime.utcnow()| | return obj (datetime.datetime)|
+    |.astimezone(pytz.timezone('Asia/Dhaka'))| | return obj time in Dhaka|
+    |.strftime('%B %d , %Y')| string | return string format date time |
+    |datetime.datetime.strptime( s, '%B %d, %Y') | s (string format) , string| return obj (datetime.datetime) |
+    
