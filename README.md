@@ -66,3 +66,33 @@ print(c)
 
 
 ![](https://sebastianraschka.com/images/blog/2014/scope_resolution_legb_rule/scope_resolution_1.png)
+
+
+
+----------------------------
+         Decorators 
+----------------------------
+
+* LEGB rule in python
+
+* if we define a variable in local scope like in function we can not get it back after
+the function call. But using Decorator we can get back the variable. 
+
+```python
+
+def message():
+    # this is the local variable
+    msg = 'Ha ha ha :)'
+
+    def myfun():
+        print(msg);
+
+    return myfun;
+
+
+m = message();
+
+print('hi rahul')
+
+m()
+```
