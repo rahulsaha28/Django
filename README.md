@@ -35,4 +35,24 @@
 
 
 
+## First class function
+
+* function return a function
+
+```python
+def get_start(tag):
+    link = None;
+
+    def get_link(msg):
+        link = f'<{tag}>{msg}</{tag}>'
+        return link;
+
+    return get_link;
+
+
+g = get_start('h2')
+c = g('hi Rahul')
+
+print(c)
+```
 
