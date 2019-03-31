@@ -170,8 +170,7 @@ print(cal1())
 
 
 
-
-.
+.````
 +-- _config.yml
 +-- _drafts
 |   +-- begin-with-the-crazy-ideas.textile
@@ -189,3 +188,4 @@ print(cal1())
 |   +-- members.yml
 +-- _site
 +-- index.html
+````
